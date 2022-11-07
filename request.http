@@ -1,0 +1,28 @@
+### SONGS INDEX
+GET http://localhost:3000/songs.json
+
+### SONGS CREATE
+POST http://localhost:3000/songs.json
+Content-Type: application/json
+
+{
+  "title": "Fast Car",
+  "album": "Tracy Chapman",
+  "artist": "Tracy Chapman",
+  "year": 1988
+}
+
+### SONGS SHOW
+GET http://localhost:3000/songs/3.json
+
+### SONGS UPDATE
+PATCH http://localhost:3000/songs/3.json
+Content-Type: application/json
+
+{
+  "year": "1999"
+}
+
+### SONGS DELETE
+
+DELETE http://localhost:3000/songs/5
